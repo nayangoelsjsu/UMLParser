@@ -11,7 +11,7 @@ public class Parser_Seq_Eng{
 
     String puml_code;
     final String i_function;
-    final String outgoingPath;
+    final String o_path;
     final String i_class;
     final String i_path;
 
@@ -24,7 +24,7 @@ public class Parser_Seq_Eng{
         class_meth_map = new HashMap<String, String>();
         map_meth_call = new HashMap<String, ArrayList<MethodCallExpr>>();
         this.i_function = i_function;
-        this.outgoingPath = i_path + "\\" + outFile + ".png";
+        this.o_path = i_path + "\\" + o_file + ".png";
         this.i_path = i_path;
         this.i_class = i_class;
         puml_code = "@startuml\n";

@@ -24,8 +24,8 @@ public class Parser_Seq_Eng{
         class_meth_map = new HashMap<String, String>();
         map_meth_call = new HashMap<String, ArrayList<MethodCallExpr>>();
         this.i_function = i_function;
-        this.outgoingPath = inPath + "\\" + outFile + ".png";
-        this.i_path = inPath;
+        this.outgoingPath = i_path + "\\" + outFile + ".png";
+        this.i_path = i_path;
         this.i_class = i_class;
         puml_code = "@startuml\n";
     }

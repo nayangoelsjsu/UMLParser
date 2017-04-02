@@ -63,6 +63,20 @@ public class ParserCode {
 		return umlbuild;
 		
 	}
+
+	private void ParseClass_Interface_dec(ClassOrInterfaceDeclaration u) {
+		// TODO Auto-generated method stub
+		if(!u.isInterface())
+		{
+			umlbuild.append("class ").append(u.getName()).append("{\n");
+			
+		}
+		else
+		{
+			umlbuild.append("interface ").append(u.getName()).append("{\n}\n");
+		}
+		umlbuild.append("}\n");
+	}
 	
 
 }

@@ -13,7 +13,7 @@ public class Main_Class {
 			try
 			{
 				ParserCode pc = new ParserCode();
-				StringBuilder string_b = pc.Read("/Users/avdeepsandhu/Desktop/A");
+				StringBuilder string_b = pc.Read("/Users/nayangoel/Desktop/A");
 				System.out.println(string_b.toString());
 				SourceStringReader pumlReader = new SourceStringReader(string_b.toString());
 				try (FileOutputStream img_out = new FileOutputStream("/Users/nayangoel/Desktop/uml_class.png")) {

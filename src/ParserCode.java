@@ -77,6 +77,20 @@ public class ParserCode {
 		}
 		umlbuild.append("}\n");
 	}
+
+	public ClassOrInterfaceDeclaration getClass_interface(CompilationUnit comp_unit) {
+		// TODO Auto-generated method stub
+		List<Node> Nlist = comp_unit.getChildNodes(); 
+		for(Node node : Nlist)
+		{
+			if(node instanceof ClassOrInterfaceDeclaration)
+			{
+				return (ClassOrInterfaceDeclaration)node;
+			}
+			
+		}
+		return null;
+	}
 	
 
 }

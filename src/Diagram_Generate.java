@@ -28,7 +28,11 @@ public class Diagram_Generate {
             int ready = 0;
             byte[] byt = new byte[1024];
 
-            
+            while ((ready = connection.getInputStream().ready(byt)) != -1) {
+                o_stream.write(byt, 0, ready);
+            }
+            o_stream.close();
+            connection.disconnect();
         } catch (MalformedURLException error) {
             error.printStackTrace();
         } catch (IOException error) {

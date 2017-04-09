@@ -9,7 +9,9 @@ public class Parser_UML {
         } else if (args[0].equals(("seq"))) {
             ParseSeqEngine pSeqEngine = new ParseSeqEngine(args[1], args[2], args[3], args[4]);
             pSeqEngine.start();
-        } 
+        } else {
+            System.out.println("Keyword Invalid " + args[0]);
+        }
 
     }
 

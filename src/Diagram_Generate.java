@@ -24,6 +24,10 @@ public class Diagram_Generate {
                 throw new RuntimeException(
                         "Failed : HTTP error code : " + connection.getResponseCode());
             }
+            OutputStream o_stream = new FileOutputStream(new File(o_path));
+            int ready = 0;
+            byte[] byt = new byte[1024];
+
             
         } catch (MalformedURLException error) {
             error.printStackTrace();

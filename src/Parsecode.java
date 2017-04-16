@@ -63,7 +63,20 @@ public class Parsecode {
 		
 	}
 
-	
+	private void pcit(cifd u) {
+		// TODO Auto-generated method stub
+		if(!u.isInterface())
+		{
+			umlbuild.append("class ").append(u.getName()).append("{\n");
+			
+		}
+		else
+		{
+			umlbuild.append("interface ").append(u.getName()).append("{\n}\n");
+		}
+		umlbuild.append("}\n");
+	}
+
 	
 	
 

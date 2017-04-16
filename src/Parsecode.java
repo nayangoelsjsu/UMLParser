@@ -77,6 +77,18 @@ public class Parsecode {
 		umlbuild.append("}\n");
 	}
 
+	public cifd GetClassAndInterface(CompilationUnit cunit) {
+		// TODO Auto-generated method stub
+		List<Node> Nlist = cunit.getChildNodes(); 
+		for(Node n : Nlist)
+		{
+			if(n instanceof cifd)
+			{
+				return (cifd)n;
+			}
+		}
+		return null;
+	}
 	
 	
 

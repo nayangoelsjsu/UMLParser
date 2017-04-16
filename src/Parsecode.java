@@ -33,7 +33,23 @@ public class Parsecode {
 			System.out.println(files.listFiles().toString());
 			for(File file : files.listFiles())
 			{
-				
+				if(file.getName().endsWith(".java"))
+				{
+					try 
+					{
+						CompilationUnit compunit = JavaParser.parse(file);
+						cifd classdec = GetClassAndInterface(compunit);
+						if (classdec != null) {
+							System.out.println(classdec+" is the classdec");
+							System.out.println("CIMAP : "+classdec.getName().toString());
+						}
+						pcit(classdec);
+					} 
+					catch (Exception error) {
+						// TODO Auto-generated catch block
+						error.printStackTrace();
+					}
+				}
 			}
 			
 			umlbuild.append("\n@umlend");

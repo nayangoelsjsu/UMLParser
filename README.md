@@ -17,7 +17,7 @@ The Following are the instructions to run the jar file and generate the class di
 
 -> Type the following command to execute the code:
 
-java -jar <name of jar file> "<path to test case folder>" <name of output diagram> generate_classDiagram
+java -jar [name of jar file[ "[path to test case folder]" [name of output diagram] generate_classDiagram
 
 for eg:
 

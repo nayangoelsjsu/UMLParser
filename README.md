@@ -23,7 +23,9 @@ for eg:
 
 java -jar classDiagram_nayan_final.jar "/Users/NayanGoel/Downloads/test4" test4Class generate_classDiagram
 
-here: the classDiagram_nayan_final.jar is the name of the jar. 
+here: 
+
+      the classDiagram_nayan_final.jar is the name of the jar. 
       
       /Users/NayanGoel/Downloads/test4 is the path to test case folder
       
